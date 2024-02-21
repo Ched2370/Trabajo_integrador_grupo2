@@ -1,0 +1,48 @@
+
+.lista-menu{
+    display: flex;
+
+    flex-direction: column;
+}
+.lista-menu li a{
+    text-decoration: none;
+}
+.main-estilo {
+    width: 70%;
+    margin: 250px;
+
+}
+
+.seccion-principal {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+
+}
+
+.seccion-principal h1 {
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 99px;
+
+}
+
+.integrantes {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.integrantes p {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
