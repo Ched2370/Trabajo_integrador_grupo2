@@ -1,0 +1,67 @@
+body {
+  background-image: url('../imagenes/fondos/fuego.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+
+.formulario {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 150px;
+  width: 300px;
+  height: 450px;
+  min-width: 250px;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.lista {
+  width: 50%;
+  margin: 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.caja {
+  border-radius: 10px;
+  background-color: antiquewhite;
+  padding: 5px 20px;
+  width: 90%;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.lbl {
+  width: 90%;
+  text-align: start;
+  padding-left: 20px;
+  color: white;
+  font-size: 18px;
+}
+
+#textarea {
+  padding-top: 10px;
+  width: 90%;
+  height: 200px;
+}
+
+.btn {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  color: black;
+  font-family: monospace;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}
