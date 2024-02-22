@@ -1,0 +1,14 @@
+body{
+    background-image: url('../imagenes/fondos/fuego.png');
+  }
+
+#dado {
+    width: 200px;
+    margin-top: 50px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.btn {
+    width: 120px;
+}

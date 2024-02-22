@@ -1,14 +1,5 @@
-body {
-  background-image: url('../imagenes/fondos/fuego.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  width: 100vw;
-  height: 100dvh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
+body{
+  background-image: url('../imagenes/fondos/astronauta.png');
 }
 
 .formulario {

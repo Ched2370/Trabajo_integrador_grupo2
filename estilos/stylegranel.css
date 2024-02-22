@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com");
+@import url("https://fonts.gstatic.com");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +15,19 @@
 
 :root {
     background-color: black;
+}
+
+body {
+    background-image: url('../imagenes/fondos/astronauta3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
 }
 
 .conteiner {
@@ -38,3 +59,19 @@
     align-items: center;
     flex-flow: column nowrap;
 }
+
+.btn {
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    color: black;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+  }
