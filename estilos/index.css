@@ -39,6 +39,7 @@
 
 #foco {
   width: 100vw;
+  
 }
 
 .main-estilo {
@@ -55,6 +56,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-flow: column nowrap;
+  position: absolute;
+  top: 40vh;
 }
 
 .seccion-principal h1 {
@@ -75,8 +79,19 @@
 }
 
 .integrantes p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
+}
+body {
+
+
+  background-image: url('../imagenes/fondos/fondo\ principal.jpg'); 
+  background-size: cover ; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  width: 100vw; height: 100vh;
+
+
 }
