@@ -84,6 +84,13 @@ body{
     color: white;
   }
 
+  .lista-menu li a:hover{
+   color: black;
+    
+
+
+  }
+
 .titulo {
     font-size: 4rem;
     color: azure;
@@ -106,6 +113,7 @@ body{
 }
 
 .footer {
+    user-select: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
