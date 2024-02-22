@@ -1,5 +1,5 @@
 body{
-    background-image: url('../imagenes/fondos/fuego.png');
+    background-image: url('../imagenes/fondos/tierra.png');
   }
 
 #dado {
@@ -11,4 +11,5 @@ body{
 
 .btn {
     width: 120px;
+    margin-top: 50px;
 }

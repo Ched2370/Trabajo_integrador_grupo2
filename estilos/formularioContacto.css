@@ -1,5 +1,5 @@
 body{
-  background-image: url('../imagenes/fondos/astronauta.png');
+  background-image: url('../imagenes/fondos/1\ \(5\).jpg');
 }
 
 .formulario {
@@ -12,6 +12,9 @@ body{
   padding: 20px;
 }
 
+.centrado {
+  margin: 5vh;
+}
 .lista {
   width: 50%;
   margin: 30px;
