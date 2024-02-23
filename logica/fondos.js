@@ -18,5 +18,5 @@ function verde(){
     style.innerHTML = 'body {background-color: green;}';
 }
 function salida() {
-    style.innerHTML = 'body {background-color: black;}';
+    style.innerHTML = 'body {background-image: url(../imagenes/fondos/eclipse.jpg);}';
 }
