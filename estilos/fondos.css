@@ -1,5 +1,7 @@
 :root {
     background-image: url(../imagenes/fondos/eclipse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
