@@ -1,3 +1,8 @@
+:root {
+    background-image: url(../imagenes/fondos/eclipse.jpg);
+}
+
+
 .corral {
     display: grid;
     grid-template: repeat(3, 1fr), repeat(3, 1fr);
