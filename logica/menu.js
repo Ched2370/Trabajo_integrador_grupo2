@@ -20,5 +20,4 @@ links.forEach((link, i) => {
     lista_menu.appendChild(li);
 });
 
-console.log(lista_menu);
 

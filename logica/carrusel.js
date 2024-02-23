@@ -1,111 +1,56 @@
-const btnAnterio = document.getElementById("ant");
-btnAnterio.addEventListener("click", anterior);
-const btnSiguiente = document.getElementById("sig");
-btnSiguiente.addEventListener('click', siguiente);
-const imagenes = document.getElementsByClassName("imagenes");
+const imagenes = 
+['../imagenes/carrusel/carru1.png', 
+'../imagenes/carrusel/carru2.png', 
+'../imagenes/carrusel/carru3.png', 
+'../imagenes/carrusel/carru4.png', 
+'../imagenes/carrusel/carru5.png',
+'../imagenes/carrusel/carru6.png',
+'../imagenes/carrusel/carru7.png',
+'../imagenes/carrusel/carru8.png',
+'../imagenes/carrusel/carru9.png'
+];
 
-function anterior() {
-  let target = null;
-  for (let i = 0; i < imagenes.length; i++) {
-    if (imagenes[i].style.zIndex === '1') {
-      target = imagenes[i].id;
+const img = document.getElementById('img');
+const ant = document.getElementById('ant');
+ant.addEventListener('click', anterior);
+const sig = document.getElementById('sig');
+sig.addEventListener('click', siguiente);
+
+var contador = 0;
+const interv = setInterval(auto, 3000);
+
+function auto() {
+  try {
+    if (contador >= imagenes.length) {
+      contador = 0;
     }
-    
-  }
-  let fuego = document.getElementById('fuego');
-  let volcan = document.getElementById('volcan');
-  let astro3 = document.getElementById('astro3');
-  let astro2 = document.getElementById('astro2');
-  let astro1 = document.getElementById('astro1');
-  let tierra = document.getElementById('tierra');
-  
-  console.log(target);
-  switch (target) {
-    case "fuego":
-      fuego.style.zIndex = 0;
-      volcan.style.zIndex = 1;
-      console.log("fuego");
-      break;
-      case "volcan":
-      volcan.style.zIndex = 0;
-      astro3.style.zIndex = 1;
-      console.log("volcan");
-      break;
-      case "astro3":
-      astro3.style.zIndex = 0;
-      astro2.style.zIndex = 1;
-      console.log("astro3");
-      break;
-    case "astro2":
-      astro2.style.zIndex = 0;
-      astro1.style.zIndex = 1;
-      console.log("astro2");
-      break;
-    case "astro1":
-      astro1.style.zIndex = 0;
-      tierra.style.zIndex = 1;
-      console.log("astro1");
-      break;
-    case "tierra":
-      tierra.style.zIndex = 0;
-      fuego.style.zIndex = 1;
-      console.log("tierra");
-      break;
-
-    default:
-      break;
+    img.src = imagenes[contador];
+    contador ++;
+  } catch (err) {
+    alert('HA surjido un error ' + err.message);
   }
 }
 
 function siguiente() {
-  let target = null;
-  for (let i = 0; i < imagenes.length; i++) {
-    if (imagenes[i].style.zIndex === '1') {
-      target = imagenes[i].id;
+  try {
+    if (contador >= imagenes.length) {
+      contador = 0;
     }
-    
+    img.src = imagenes[contador];
+    contador ++;
+  } catch (err) {
+    alert('HA surjido un error ' + err.message);
   }
-  let fuego = document.getElementById('fuego');
-  let volcan = document.getElementById('volcan');
-  let astro3 = document.getElementById('astro3');
-  let astro2 = document.getElementById('astro2');
-  let astro1 = document.getElementById('astro1');
-  let tierra = document.getElementById('tierra');
-  
-  console.log(target);
-  switch (target) {
-    case "fuego":
-      fuego.style.zIndex = 0;
-      tierra.style.zIndex = 1;
-      console.log("fuego");
-      break;
-      case "volcan":
-      volcan.style.zIndex = 0;
-      fuego.style.zIndex = 1;
-      console.log("volcan");
-      break;
-      case "astro3":
-      astro3.style.zIndex = 0;
-      volcan.style.zIndex = 1;
-      console.log("astro3");
-      break;
-    case "astro2":
-      astro2.style.zIndex = 0;
-      astro3.style.zIndex = 1;
-      console.log("astro2");
-      break;
-    case "astro1":
-      astro1.style.zIndex = 0;
-      astro2.style.zIndex = 1;
-      console.log("astro1");
-      break;
-    case "tierra":
-      tierra.style.zIndex = 0;
-      astro1.style.zIndex = 1;
-      console.log("tierra");
-      break;
+}
 
-    default:
-      break;
+function anterior() {
+  try {
+    contador --;
+    if (contador < 0) {
+      contador = imagenes.length - 1;
+    }
+    img.src = imagenes[contador];
+  } catch (err) {
+    alert('HA surjido un error ' + err.message);
   }
 }
