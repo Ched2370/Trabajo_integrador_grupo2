@@ -29,7 +29,9 @@ body{
     justify-content: space-around;
     align-items: center;
     flex-flow: column nowrap;
-    height: 80vh;
+    height: 90vh;
+    position: relative;
+    top: 5%;
 }
 
 .conteiner {
@@ -83,7 +85,7 @@ body{
   }
 
   .lista-menu li a:hover{
-   color: black;
+   color: orangered;
     background-color: rgba(0, 0, 0, 0.2);
   }
 

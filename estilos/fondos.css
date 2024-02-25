@@ -1,3 +1,10 @@
+:root {
+    background-image: url(../imagenes/fondos/eclipse.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
 .corral {
     display: grid;
     grid-template: repeat(3, 1fr), repeat(3, 1fr);
@@ -5,9 +12,8 @@
     "uno . tres"
     ". cinco ."
     "siete . nueve";
-    width: 250px;
-    height: 250px;
-    margin: auto;
+    width: 400px;
+    height: 400px;
 }
 
 #rojo {
