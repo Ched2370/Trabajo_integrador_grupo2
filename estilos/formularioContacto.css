@@ -2,6 +2,10 @@ body{
   background-image: url('../imagenes/fondos/1\ \(5\).jpg');
 }
 
+.centrado {
+  flex-direction: row;
+}
+
 .formulario {
   background-color: rgba(0, 0, 0, 0.5);
   min-width: 150px;
