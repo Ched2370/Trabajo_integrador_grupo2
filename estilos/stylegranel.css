@@ -12,14 +12,21 @@
 /* Colocamos un fondo negro por si falla el body */
 :root {
   background-color: black;
+  --fs-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --fs-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --fs-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --fs-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --fs-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --fs-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --fs-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
 }
 /* Usamos un display grid para el header, section y footer para evitar inconvenientes resposives */
 body {
   display: grid;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100vw 100vh;
   min-height: 100vh;
-  min-width: 600px;
+  min-width: 100vw;
   grid-template-rows: auto 1fr auto;
 }
 /* display flex para centrar el section */
@@ -27,7 +34,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-width: 500px;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 /* display flex para centrar  */
 .conteiner {
@@ -43,6 +51,9 @@ body {
   align-items: center;
   flex-flow: column nowrap;
   height: 10vh;
+  position: fixed;
+  right: 50%;
+  left: 50%;
 }
 /* display flex para centrar el nav */
 .menu-nav {
@@ -102,6 +113,9 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
   color: white;
+  min-width: 100vw;
+  position: fixed;
+  bottom: 0;
 }
 /* stylo botones generales */
 .btn {
