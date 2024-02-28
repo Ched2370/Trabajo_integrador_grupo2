@@ -1,7 +1,8 @@
+/* fondo de pagina index */
 body {
   background-image: url(../imagenes/fondos/fondo\ principal.jpg);
 }
-
+/* tag main */
 .main-estilo {
   width: 100vw;
   display: flex;
@@ -9,7 +10,7 @@ body {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
 }
-
+/* tag section */
 .seccion-principal {
   display: flex;
   text-align: center;
@@ -17,7 +18,7 @@ body {
   align-items: center;
   backdrop-filter: blur(2px);
 }
-
+/* tag 1 */
 #foco {
   user-select: none;
   width: 100vw;
