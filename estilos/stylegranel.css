@@ -1,18 +1,19 @@
+/* Importamos las fuentes que vamos a usar roboto, monserrat y bebas neue */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-
+/* Reseteamos los parametros */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: white;
 }
-
+/* Colocamos un fondo negro por si falla el body */
 :root {
   background-color: black;
 }
-
+/* Usamos un display grid para el header, section y footer para evitar inconvenientes resposives */
 body {
   display: grid;
   background-repeat: no-repeat;
@@ -21,21 +22,21 @@ body {
   min-width: 600px;
   grid-template-rows: auto 1fr auto;
 }
-
+/* display flex para centrar el section */
 .centrado {
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-width: 500px;
 }
-
+/* display flex para centrar  */
 .conteiner {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
 }
-
+/* display flex para centrar el header */
 .cabecera {
   display: flex;
   justify-content: center;
@@ -43,7 +44,7 @@ body {
   flex-flow: column nowrap;
   height: 10vh;
 }
-
+/* display flex para centrar el nav */
 .menu-nav {
   display: flex;
   justify-content: center;
@@ -51,7 +52,7 @@ body {
   flex-flow: row nowrap;
   height: 5vh;
 }
-
+/* display flex para centrar ul */
 .lista-menu {
   display: flex;
   justify-content: center;
@@ -60,24 +61,24 @@ body {
   border-radius: 200px;
   background-color: rgba(255, 255, 255, 0.1);
 }
-
+/* etiqueta li */
 .lista-menu li {
   list-style: none;
   padding: 1rem;
 }
-
+/* Etiqueta a */
 .lista-menu li a {
   text-decoration: none;
   font-size: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
   color: white;
   padding: 1rem;
 }
-
+/* hover de etiqueta a */
 .lista-menu li a:hover {
   color: orangered;
   background-color: rgba(0, 0, 0, 0.2);
 }
-
+/* clase titulos */
 .titulo {
   font-size: 4rem;
   color: azure;
@@ -85,13 +86,13 @@ body {
   text-decoration: underline;
   text-align: center;
 }
-
+/* clase parrafos */
 .parrafo {
   color: coral;
   padding: 1em;
   text-align: justify;
 }
-
+/* footer user-select: none que evitar que el usuario selecciones el parrafo */
 .footer {
   user-select: none;
   display: flex;
@@ -102,7 +103,7 @@ body {
   backdrop-filter: blur(2px);
   color: white;
 }
-
+/* stylo botones generales */
 .btn {
   background-color: cornflowerblue;
   color: black;
@@ -113,7 +114,7 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
-
+/* estilo hover de botones generales */
 .btn:hover {
   background-color: crimson;
   color: white;
