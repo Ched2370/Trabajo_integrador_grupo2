@@ -4,8 +4,7 @@ body {
 }
 /* imagenes */
 .imagenes {
-  min-width: 400px;
-  height: 400px;
+  min-width: 250px;
 }
 /* etiqueta div contenedora de img y btn */
 #carrucel {
@@ -13,7 +12,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-flow: row nowrap;
-  width: 100%;
+  width: 100vw;
 }
 /* Los botones son distintos al resto */
 .btn {
