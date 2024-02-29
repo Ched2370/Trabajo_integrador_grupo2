@@ -1,6 +1,7 @@
 /* fondo de pagina carrucel */
 body {
   background-image: url(../imagenes/fondos/estrellas.jpg);
+  min-height: 768px;
 }
 /* imagenes */
 .imagenes {
@@ -32,3 +33,15 @@ body {
   color: white;
 }
 
+@media screen and (max-width: 576px) {
+  .btn {
+    font-size: 1rem;
+    padding: 50px 15px;
+  }
+}
+
+@media screen and (max-height: 500px) {
+  .imagenes {
+    max-height: 300px;
+  }
+}

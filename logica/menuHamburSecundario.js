@@ -1,6 +1,6 @@
 const ham = document.getElementById('ham');
 const listaM = document.querySelector('.lista-menu');
-const principal = document.querySelector('.seccion-principal');
+const cajas = document.querySelectorAll('.caja');
 const footer2 = document.querySelector('.footer');
 
 ham.addEventListener('click', () => {
