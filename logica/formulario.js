@@ -135,6 +135,7 @@ function agregar(d) {
     /* Guardo los datos en localstorage */
     let datosG = JSON.parse(localStorage.getItem("datos")) || [];
     datosG.push(d);
+    /* filtro los datos para que no se generen datos repetidos en el localstorage */
     let datosU = datosG.filter((item, index, array) => {
       for (let i = index + 1; i < array.length; i++) {
         if (JSON.stringify(item) === JSON.stringify(array[i])) {
